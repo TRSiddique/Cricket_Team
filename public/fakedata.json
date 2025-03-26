@@ -1,0 +1,103 @@
+[
+    {
+      "playerId": 1,
+      "name": "Virat Kohli",
+      "country": "India",
+      "image": "https://www.cricbuzz.com/a/img/v1/600x400/i1/c158799/virat-kohli.jpg",
+      "role": "Batsman",
+      "battingType": "Right-hand bat",
+      "bowlingType": "Right-arm medium",
+      "biddingPrice": 2000000
+    },
+    {
+      "playerId": 2,
+      "name": "Joe Root",
+      "country": "England",
+      "image": "https://www.cricbuzz.com/a/img/v1/600x400/i1/c137744/joe-root.jpg",
+      "role": "Batsman",
+      "battingType": "Right-hand bat",
+      "bowlingType": "Right-arm offbreak",
+      "biddingPrice": 1800000
+    },
+    {
+      "playerId": 3,
+      "name": "Babar Azam",
+      "country": "Pakistan",
+      "image": "https://www.cricbuzz.com/a/img/v1/600x400/i1/c159670/babar-azam.jpg",
+      "role": "Batsman",
+      "battingType": "Right-hand bat",
+      "bowlingType": "Right-arm offbreak",
+      "biddingPrice": 1900000
+    },
+    {
+      "playerId": 4,
+      "name": "Kane Williamson",
+      "country": "New Zealand",
+      "image": "https://www.cricbuzz.com/a/img/v1/600x400/i1/c147153/kane-williamson.jpg",
+      "role": "Batsman",
+      "battingType": "Right-hand bat",
+      "bowlingType": "Right-arm offbreak",
+      "biddingPrice": 1700000
+    },
+    {
+      "playerId": 5,
+      "name": "Steve Smith",
+      "country": "Australia",
+      "image": "https://www.cricbuzz.com/a/img/v1/600x400/i1/c137677/steve-smith.jpg",
+      "role": "Batsman",
+      "battingType": "Right-hand bat",
+      "bowlingType": "Right-arm legbreak",
+      "biddingPrice": 1750000
+    },
+    {
+      "playerId": 6,
+      "name": "Rashid Khan",
+      "country": "Afghanistan",
+      "image": "https://www.cricbuzz.com/a/img/v1/600x400/i1/c158106/rashid-khan.jpg",
+      "role": "All-rounder",
+      "battingType": "Right-hand bat",
+      "bowlingType": "Right-arm legbreak",
+      "biddingPrice": 1600000
+    },
+    {
+      "playerId": 7,
+      "name": "Jasprit Bumrah",
+      "country": "India",
+      "image": "https://www.cricbuzz.com/a/img/v1/600x400/i1/c158246/jasprit-bumrah.jpg",
+      "role": "Bowler",
+      "battingType": "Right-hand bat",
+      "bowlingType": "Right-arm fast",
+      "biddingPrice": 1850000
+    },
+    {
+      "playerId": 8,
+      "name": "Shaheen Afridi",
+      "country": "Pakistan",
+      "image": "https://www.cricbuzz.com/a/img/v1/600x400/i1/c158308/shaheen-afridi.jpg",
+      "role": "Bowler",
+      "battingType": "Left-hand bat",
+      "bowlingType": "Left-arm fast",
+      "biddingPrice": 1700000
+    },
+    {
+      "playerId": 9,
+      "name": "Ben Stokes",
+      "country": "England",
+      "image": "https://www.cricbuzz.com/a/img/v1/600x400/i1/c147198/ben-stokes.jpg",
+      "role": "All-rounder",
+      "battingType": "Left-hand bat",
+      "bowlingType": "Right-arm fast-medium",
+      "biddingPrice": 2000000
+    },
+    {
+      "playerId": 10,
+      "name": "Pat Cummins",
+      "country": "Australia",
+      "image": "https://www.cricbuzz.com/a/img/v1/600x400/i1/c147451/pat-cummins.jpg",
+      "role": "Bowler",
+      "battingType": "Right-hand bat",
+      "bowlingType": "Right-arm fast",
+      "biddingPrice": 1750000
+    }
+  ]
+  
