@@ -1,15 +1,18 @@
 
 
-const Player = ({player,handleSelected,coin}) => {
+const Player = ({player,handleSelected,coin,setCoin}) => {
     const { image, name, role, country, biddingPrice ,battingType} = player; 
 
  const handleClick = () => {
         if (biddingPrice > coin) {
-          alert(` ${name} is too expensive! You don't have enough money`);
+          alert(`Sad!! 
+You don't have enough money to buy this player`);
         } else {
 
             alert(`${name} is selected`);
           handleSelected(player);
+          setCoin(coin-player.biddingPrice);
+         
         }
       };
     return (

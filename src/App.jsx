@@ -2,6 +2,8 @@ import { useState } from "react";
 import Navbar from "./Components/Header/Navbar";
 import Banner from "./Components/Header/Banner";
 import Players from "./Components/Players/Players";
+import Newsletter from "./Components/body/Newsletter";
+import Footer from "./Components/body/Footer";
 
 function App() {
   const [coin, setCoin] = useState(0);
@@ -10,6 +12,7 @@ function App() {
     setCoin(newCoin);
   };
 
+  console.log(coin)
 
 
   const [isActive, setIsActive] = useState({
@@ -39,7 +42,9 @@ function App() {
     <>
       <Navbar coin={coin}></Navbar>
       <Banner claimCoin={claimCoin}></Banner>
-      <Players coin={coin} isActive={isActive} handleIsActive={handleIsActive}></Players>
+      <Players setCoin={setCoin} coin={coin} isActive={isActive} handleIsActive={handleIsActive}></Players>
+      <Newsletter></Newsletter>
+      <Footer></Footer>
     </>
   );
 }

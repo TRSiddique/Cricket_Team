@@ -5,7 +5,7 @@ import './Players.css'
 import AvailablePlayer from "../Player/AvailablePlayer";
 
 
-const Players = ({handleIsActive,isActive,coin}) => {
+const Players = ({handleIsActive,isActive,coin,setCoin}) => {
   const [players, setPlayers] = useState([]);
 
   useEffect(() => {
@@ -25,7 +25,7 @@ const Players = ({handleIsActive,isActive,coin}) => {
  console.log(selected)
 
   return (
-    <div className='w-10/12 mx-auto mt-5'>
+    <div className='w-10/12 mx-auto mt-5 pt-20 lg:pt-5 pb-[200px] border'>
       <div className='flex justify-between'>
       <h2 className='text-4xl'></h2>
 
@@ -35,7 +35,7 @@ const Players = ({handleIsActive,isActive,coin}) => {
 </div>
       </div>
 
-      {isActive.cart?<AvailablePlayer coin={coin} handleSelected={handleSelected} players={players}></AvailablePlayer>:<SelectedPlayer handleIsActive={handleIsActive} isActive={isActive} selected={selected}></SelectedPlayer>}
+      {isActive.cart?<AvailablePlayer setCoin={setCoin} coin={coin} handleSelected={handleSelected} players={players}></AvailablePlayer>:<SelectedPlayer handleIsActive={handleIsActive} isActive={isActive} selected={selected}></SelectedPlayer>}
       
       
       
