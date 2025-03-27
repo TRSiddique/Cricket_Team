@@ -1,8 +1,17 @@
 
 
-const Player = ({player}) => {
+const Player = ({player,handleSelected,coin}) => {
     const { image, name, role, country, biddingPrice ,battingType} = player; 
-    
+
+ const handleClick = () => {
+        if (biddingPrice > coin) {
+          alert(` ${name} is too expensive! You don't have enough money`);
+        } else {
+
+            alert(`${name} is selected`);
+          handleSelected(player);
+        }
+      };
     return (
     
     <div className="border p-4 rounded-lg shadow-lg h-[450px] ">   
@@ -14,7 +23,7 @@ const Player = ({player}) => {
         <p>Batting Type: {battingType}</p>
         <div className="flex justify-between">
         <p className="text-green-600 font-bold">Price: ${biddingPrice}</p>
-        <button className='border'>Choose Player</button>
+        <button onClick={handleClick} className='border' >Choose Player</button>
         </div>
     </div>
    

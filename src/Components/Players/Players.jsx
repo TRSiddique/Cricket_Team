@@ -1,6 +1,11 @@
 import { useState, useEffect } from "react";
 import Player from "../Player/Player";
-const Players = () => {
+import SelectedPlayer from "../Player/SelectedPlayer";
+import './Players.css'
+import AvailablePlayer from "../Player/AvailablePlayer";
+
+
+const Players = ({handleIsActive,isActive,coin}) => {
   const [players, setPlayers] = useState([]);
 
   useEffect(() => {
@@ -9,14 +14,31 @@ const Players = () => {
       .then((data) => setPlayers(data));
   }, []);
 
+  const [selected, setSelected]=useState([])
+  const handleSelected =(player)=>{
+   const newSelected=[...selected, player]
+    setSelected(newSelected)
+
+
+  }
+
+ console.log(selected)
+
   return (
-    <div className='w-10/12 mx-auto'>
-      <h2 className='text-4xl'>Available Player</h2>
-      <div className="grid grid-cols-3">
-        {players.map((player) => (
-          <Player player={player}></Player>
-        ))}
+    <div className='w-10/12 mx-auto mt-5'>
+      <div className='flex justify-between'>
+      <h2 className='text-4xl'></h2>
+
+<div className='flex items-end justify-between'>
+<button className={`${isActive.cart?"btn active":"btn" }`} onClick={()=>handleIsActive("cart")}>Available</button>
+<button className={`${isActive.cart?"btn":"active btn"}`} onClick={()=>handleIsActive("About")}>Selected ({selected.length}) </button>
+</div>
       </div>
+
+      {isActive.cart?<AvailablePlayer coin={coin} handleSelected={handleSelected} players={players}></AvailablePlayer>:<SelectedPlayer handleIsActive={handleIsActive} isActive={isActive} selected={selected}></SelectedPlayer>}
+      
+      
+      
     </div>
   );
 };

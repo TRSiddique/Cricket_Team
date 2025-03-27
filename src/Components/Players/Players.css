@@ -1,0 +1,14 @@
+.btn{
+    border: 1px solid gray;
+    padding: 7px;
+    border-radius: 10px;
+
+
+
+}
+.active{
+    background-color: blue;
+    padding: 7px;
+    border-radius: 10px;
+    color :white;
+}
